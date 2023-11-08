@@ -5,6 +5,7 @@ from dash_auth import BasicAuth
 from database import db, User, ContactUs, create_tables
 
 app = dash.Dash(__name__)
+server = app.server
 app.config.suppress_callback_exceptions = True
 
 # Set up the SQLite database
